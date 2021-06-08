@@ -13,7 +13,7 @@ const Employee = ({employees,deleteEmployee}) => {
                             <td>{employee.address}</td>
                             <td>{employee.department}</td>
                             <td>{employee.salary}</td>
-                            <a href="#"><td onClick={()=>{deleteEmployee(employee.id)}}>X</td></a>
+                            <a href="#" className="text-danger fw-bold"><td onClick={()=>{deleteEmployee(employee.id)}}>X</td></a>
                         </tr>
                     </tbody>   
         )}
